@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "1cc0f7c4-e017-432a-8e51-c55c3f6785f2",
+		"name": "Recime Api requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31809348"
+	},
+	"item": [
+		{
+			"name": "Get trending recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/recime/trending"
+			},
+			"response": []
+		},
+		{
+			"name": "Get trending recipe filtered by easy difficulty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recime/trending/filtered?difficulty=easy",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recime",
+						"trending",
+						"filtered"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "easy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trending recipe filtered by medium difficulty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recime/trending/filtered?difficulty=medium",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recime",
+						"trending",
+						"filtered"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "medium"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get trending recipe filtered by hard difficulty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recime/trending/filtered?difficulty=hard",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recime",
+						"trending",
+						"filtered"
+					],
+					"query": [
+						{
+							"key": "difficulty",
+							"value": "hard"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
